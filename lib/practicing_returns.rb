@@ -10,10 +10,4 @@ def hello(array)
   collection
 end
 
-def method(a)
-  
-end
-
-hello(["Tim", "Tom", "Jim"]) do |name| 
-  puts "Hi, #{name}"
-end
+hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
